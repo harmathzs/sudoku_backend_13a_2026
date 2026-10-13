@@ -1,5 +1,10 @@
+require('dotenv').config() // ettől létezik process.env.ENV_VAR_ ... 
+
 const express = require('express')
+const cors = require('cors')
 const app = express()
+
+app.use(cors())
 
 const PORT = 8080
 
